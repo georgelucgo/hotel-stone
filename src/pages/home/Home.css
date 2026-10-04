@@ -1,0 +1,185 @@
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.sobre-title {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  gap: 20px;
+}
+
+.sobre-title::before,
+.sobre-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #000000;
+}
+
+.sobre-title span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sobre-content {
+  display: flex;
+  align-items: center;
+  margin: 100px 0;
+  gap: 30px;
+}
+
+.sobre-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  flex: 1;
+}
+
+.sobre-text h2 {
+  margin: 0;
+}
+
+.sobre-text p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sobre-img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.quartos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.quartos-title {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  gap: 20px;
+}
+
+.quartos-title::before,
+.quartos-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #000000;
+}
+
+.quartos-title h2 {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.quartos-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 350px));
+  justify-content: center;
+  gap: 30px;
+}
+
+.quarto-link {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+#sobre,
+#quartos,
+#contato {
+  scroll-margin-top: 100px;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .sobre-title {
+    width: 50%;
+  }
+
+  .quartos-title {
+    width: 60%;
+  }
+
+  .quartos-content {
+    grid-template-columns: repeat(2, minmax(0, 350px));
+  }
+}
+
+/* Celular */
+@media (max-width: 700px) {
+  .sobre {
+    margin-top: 20px;
+  }
+
+  .sobre-title {
+    width: 90%;
+    gap: 12px;
+  }
+
+  .sobre-title span {
+    font-size: 20px;
+  }
+
+  .sobre-content {
+    flex-direction: column;
+    margin: 50px 0;
+    gap: 30px;
+  }
+
+  .sobre-text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sobre-text h2 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .sobre-text p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .sobre-img {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+  }
+
+  .quartos {
+    margin-bottom: 60px;
+  }
+
+  .quartos-title {
+    width: 90%;
+    gap: 12px;
+  }
+
+  .quartos-title h2 {
+    font-size: 20px;
+  }
+
+  .quartos-content {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+    padding: 0 10px;
+  }
+}

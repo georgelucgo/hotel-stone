@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nome": "Quarto Individual",
+    "hrefImg": "/imagens/quarto-individual.jpg",
+    "descricao": "Acomoda até 2 pessoas, com 1 cama de casal. Confortável e funcional, é uma ótima opção para hóspedes individuais ou casais."
+  },
+  {
+    "id": 2,
+    "nome": "Quarto Duplo",
+    "hrefImg": "/imagens/quarto-duplo.png",
+    "descricao": "Acomoda até 3 pessoas, com 1 cama de casal e 1 cama de solteiro. Indicada para casais com filho, pequenas famílias ou hóspedes que necessitam de uma cama adicional."
+  },
+  {
+    "id": 3,
+    "nome": "Quarto Triplo",
+    "hrefImg": "/imagens/quarto-triplo.png",
+    "descricao": "Acomoda até 3 pessoas, com 3 camas de solteiro. Uma excelente opção para amigos, colegas de trabalho ou hóspedes que preferem camas individuais."
+  }
+]
